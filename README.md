@@ -44,6 +44,14 @@ while True:
 il affiche sur la console minicom le resultat de sortie
 
 ## Exercice 4
+`
+def on_forever():
+ BME280.power_on()
+ basic.show_number(BME280.temperature(BME280_T.T_C))
+ basic.show_number(BME280.humidity())
+basic.forever(on_forever)
+`
+On a utliser l'IDE makecode car on n'arrivait pas à importer la biblioteque BME280
 
 ## Exercice 5
 
